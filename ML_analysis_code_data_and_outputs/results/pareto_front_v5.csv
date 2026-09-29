@@ -1,0 +1,3 @@
+DecisionRank,PHighRank,ParetoFront,ParetoNonDominated,DominationCount,Chemistry,Morphology,Support,P_high,H_hierarchy,PerformanceWeight,HierarchyWeight,DecisionUtility,ObservedCoreTripleCount,ObservedFullArchitectureCount,Target
+7,1,1,True,0,CuOH2-containing,1D,Graphene,0.5715966839855086,0.0,0.9,0.1,0.5144370155869578,0,0,False
+1,4,1,True,0,CuOH2-containing,Nanoflower,Graphene,0.5542582315608013,1.0,0.9,0.1,0.5988324084047212,1,1,True

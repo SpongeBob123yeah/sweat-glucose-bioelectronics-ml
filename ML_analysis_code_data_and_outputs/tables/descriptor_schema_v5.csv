@@ -1,0 +1,14 @@
+Descriptor,Type,Values_or_categories,Encoding,Role
+BroadChemistry,Categorical,CuOH2-containing; NiOH2-containing; CoOHx-containing; CuOxide-containing; Other,One-hot,Broad active-chemistry family
+Morphology,Categorical,0D; 1D; 2D; 3D; Nanoflower; Other,One-hot,Reported active-material morphology
+Support,Categorical,Graphene; CNT; CarbonFabric; ConductivePolymer; Other; None,One-hot,Functional support; separated from current collector
+Modifier,Categorical,None plus literature-reported modifier classes,One-hot,Separates promoter/composite effects from the base active phase
+SupportTopology,Categorical,Graphene3D; graphene coating; carbon fabric; metal-self-supported; etc.,One-hot,Architecture topology
+CollectorFamily,Categorical,GrapheneIntegrated; CNTIntegrated; GCE; ITO/FTO; metal foils/foams; etc.,One-hot,Current-collector family
+IntegratedFlag,Binary,0/1,Binary predictor,Structurally integrated architecture
+DirectGrowthFlag,Binary,0/1,Binary predictor,Direct growth of active phase on support/collector
+BinderFreeFlag,Binary,0/1,Binary predictor,Binder-free architecture
+ChemMorph,Interaction,Chemistry × morphology,One-hot interaction,Coupled chemistry–morphology effect
+ChemSupport,Interaction,Chemistry × support,One-hot interaction,Coupled chemistry–support effect
+MorphSupport,Interaction,Morphology × support,One-hot interaction,Coupled morphology–support effect
+H_hierarchy,Decision objective,1 for nanoflower; 0 for 0D/1D/2D,Not used as an independent classifier predictor,Independent second objective for Pareto/decision analysis; chemistry- and support-independent

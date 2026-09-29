@@ -1,0 +1,34 @@
+Section,Descriptor,Configurations
+BroadChemistry,Cu oxide,51
+BroadChemistry,Ni(OH)2,29
+BroadChemistry,Cu(OH)2,19
+BroadChemistry,CoOHx,10
+BroadChemistry,Other,42
+Otherchemistry,Multimetal oxide,19
+Otherchemistry,Cu/Ni,10
+Otherchemistry,Monometal oxide,8
+Otherchemistry,MOF composites,2
+Otherchemistry,Co(OH)F,1
+Otherchemistry,CP-rGO,1
+Otherchemistry,Ni2P,1
+ElementOccurrence,O,139
+ElementOccurrence,C,93
+ElementOccurrence,Cu,85
+ElementOccurrence,H,68
+ElementOccurrence,Ni,59
+ElementOccurrence,Co,33
+ElementOccurrence,N,10
+ElementOccurrence,Au,9
+ElementOccurrence,Sn,6
+ElementOccurrence,F,5
+ElementOccurrence,S,4
+ElementOccurrence,Ti,3
+ElementOccurrence,Mo,3
+ElementOccurrence,P,2
+ElementOccurrence,Ag,2
+ElementOccurrence,In,2
+ElementOccurrence,Pt,2
+ElementOccurrence,B,1
+ElementOccurrence,Fe,1
+ElementOccurrence,Zn,1
+ElementOccurrence,Ce,1

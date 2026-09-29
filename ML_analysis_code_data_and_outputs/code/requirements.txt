@@ -1,0 +1,8 @@
+# Python version: 3.13.3
+numpy==2.2.4
+scipy==1.15.2
+pandas==2.2.3
+scikit-learn==1.6.1
+xgboost==3.0.2
+shap==0.48.0
+matplotlib==3.10.1

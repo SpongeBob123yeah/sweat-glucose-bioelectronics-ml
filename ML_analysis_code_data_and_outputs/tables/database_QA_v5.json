@@ -1,0 +1,19 @@
+{
+  "version": "v5.0 PARETO-LOCKED",
+  "n_rows": 151,
+  "n_paper_groups": 137,
+  "duplicate_record_ids": 0,
+  "missing_sensitivity": 0,
+  "high_performance_threshold_uA_mM_cm2": 3076.0,
+  "threshold_origin": "Frozen upper-quartile criterion from the governed model-input set at initial classification definition.",
+  "high_performance_rows": 54,
+  "chemistry_counts": {
+    "CoOHx-containing": 10,
+    "NiOH2-containing": 29,
+    "CuOH2-containing": 19,
+    "CuOxide-containing": 51,
+    "Other": 42
+  },
+  "source_audit_status_counts": {},
+  "important_boundary": "All 151 evidence configurations are retained for model learning; inverse-domain restriction occurs only at the candidate decision stage."
+}

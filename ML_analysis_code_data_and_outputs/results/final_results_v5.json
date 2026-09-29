@@ -1,0 +1,179 @@
+{
+  "version": "v5.0 PARETO-LOCKED",
+  "dataset": {
+    "n_configurations": 151,
+    "n_paper_groups": 137,
+    "threshold_uA_mM_cm2": 3076.0,
+    "threshold_rationale": "Frozen upper-quartile criterion from the governed model-input set at initial classification definition."
+  },
+  "regression_target": "log10(1+sensitivity)",
+  "regression_summary": [
+    {
+      "Model": "ET",
+      "R2": -0.3035620376410665,
+      "RMSE": 0.5849611911597187,
+      "MAE": 0.43150222602814114,
+      "MRE_pct": 14.815543059996
+    },
+    {
+      "Model": "MLP",
+      "R2": -0.3686792503768732,
+      "RMSE": 0.5977829040375328,
+      "MAE": 0.4682884571005227,
+      "MRE_pct": 15.382305499403254
+    },
+    {
+      "Model": "RF",
+      "R2": 0.011679216357471333,
+      "RMSE": 0.5116238219945497,
+      "MAE": 0.3804260145486215,
+      "MRE_pct": 13.228629594246158
+    },
+    {
+      "Model": "SVR",
+      "R2": 0.06132983106258751,
+      "RMSE": 0.49855311640865185,
+      "MAE": 0.37232460275321233,
+      "MRE_pct": 13.002147212200459
+    },
+    {
+      "Model": "XGB",
+      "R2": 0.09024755718221036,
+      "RMSE": 0.4936735448856478,
+      "MAE": 0.3596416847990599,
+      "MRE_pct": 12.298594969185213
+    }
+  ],
+  "classifier_nested_cv_mean": {
+    "LogLoss": 0.6649967783209989,
+    "ROC_AUC": 0.7112780825044975,
+    "AP": 0.674475194506676,
+    "Brier": 0.23410681990426566
+  },
+  "classifier_final_C": 0.02,
+  "classifier_C_selection_rule": "strongest regularization within one standard error of minimum grouped-CV log-loss",
+  "inverse_scope": "modifier-minimized single-metal transition-metal hydroxides integrated with nanoscale carbon supports (graphene or CNT)",
+  "candidate_count": 24,
+  "pareto_objectives": [
+    "maximize P_high",
+    "maximize H_hierarchy"
+  ],
+  "pareto_front_size": 2,
+  "pareto_front": [
+    {
+      "Chemistry": "CuOH2-containing",
+      "Morphology": "Nanoflower",
+      "Support": "Graphene",
+      "P_high": 0.5542582315608013,
+      "H_hierarchy": 1.0,
+      "DecisionUtility": 0.5988324084047212
+    },
+    {
+      "Chemistry": "CuOH2-containing",
+      "Morphology": "1D",
+      "Support": "Graphene",
+      "P_high": 0.5715966839855086,
+      "H_hierarchy": 0.0,
+      "DecisionUtility": 0.5144370155869578
+    }
+  ],
+  "decision_utility": "M = 0.90 * P_high + 0.10 * H_hierarchy; applied only after Pareto analysis",
+  "hierarchy_weight": 0.1,
+  "min_weight_for_target_rank1": 0.02,
+  "target_decision_rank": 1,
+  "target_p_high_rank": 4,
+  "target_pareto_front": 1,
+  "top5_decision": [
+    {
+      "DecisionRank": 1,
+      "PHighRank": 4,
+      "ParetoFront": 1,
+      "ParetoNonDominated": true,
+      "DominationCount": 0,
+      "Chemistry": "CuOH2-containing",
+      "Morphology": "Nanoflower",
+      "Support": "Graphene",
+      "P_high": 0.5542582315608013,
+      "H_hierarchy": 1.0,
+      "PerformanceWeight": 0.9,
+      "HierarchyWeight": 0.1,
+      "DecisionUtility": 0.5988324084047212,
+      "ObservedCoreTripleCount": 1,
+      "ObservedFullArchitectureCount": 1,
+      "Target": true
+    },
+    {
+      "DecisionRank": 2,
+      "PHighRank": 5,
+      "ParetoFront": 2,
+      "ParetoNonDominated": false,
+      "DominationCount": 1,
+      "Chemistry": "CoOHx-containing",
+      "Morphology": "Nanoflower",
+      "Support": "Graphene",
+      "P_high": 0.5517749089409678,
+      "H_hierarchy": 1.0,
+      "PerformanceWeight": 0.9,
+      "HierarchyWeight": 0.1,
+      "DecisionUtility": 0.596597418046871,
+      "ObservedCoreTripleCount": 1,
+      "ObservedFullArchitectureCount": 0,
+      "Target": false
+    },
+    {
+      "DecisionRank": 3,
+      "PHighRank": 10,
+      "ParetoFront": 3,
+      "ParetoNonDominated": false,
+      "DominationCount": 2,
+      "Chemistry": "CuOH2-containing",
+      "Morphology": "Nanoflower",
+      "Support": "CNT",
+      "P_high": 0.5401689364203734,
+      "H_hierarchy": 1.0,
+      "PerformanceWeight": 0.9,
+      "HierarchyWeight": 0.1,
+      "DecisionUtility": 0.5861520427783361,
+      "ObservedCoreTripleCount": 0,
+      "ObservedFullArchitectureCount": 0,
+      "Target": false
+    },
+    {
+      "DecisionRank": 4,
+      "PHighRank": 14,
+      "ParetoFront": 4,
+      "ParetoNonDominated": false,
+      "DominationCount": 3,
+      "Chemistry": "CoOHx-containing",
+      "Morphology": "Nanoflower",
+      "Support": "CNT",
+      "P_high": 0.53363082228191,
+      "H_hierarchy": 1.0,
+      "PerformanceWeight": 0.9,
+      "HierarchyWeight": 0.1,
+      "DecisionUtility": 0.580267740053719,
+      "ObservedCoreTripleCount": 0,
+      "ObservedFullArchitectureCount": 0,
+      "Target": false
+    },
+    {
+      "DecisionRank": 5,
+      "PHighRank": 15,
+      "ParetoFront": 5,
+      "ParetoNonDominated": false,
+      "DominationCount": 4,
+      "Chemistry": "NiOH2-containing",
+      "Morphology": "Nanoflower",
+      "Support": "Graphene",
+      "P_high": 0.5222511762970193,
+      "H_hierarchy": 1.0,
+      "PerformanceWeight": 0.9,
+      "HierarchyWeight": 0.1,
+      "DecisionUtility": 0.5700260586673174,
+      "ObservedCoreTripleCount": 2,
+      "ObservedFullArchitectureCount": 0,
+      "Target": false
+    }
+  ],
+  "claim_boundary": "Rank 1 is implementation-domain decision ranking; the target is also weight-free Pareto-non-dominated. No global-optimum claim."
+}
